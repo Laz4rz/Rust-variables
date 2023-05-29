@@ -61,5 +61,25 @@ fn main() {
 
     println!("The number of spaces is {spaces}");
 
+
+    // EXPLICIT TYPE ANNOTATIONS AT COMPILE TIME
+
+    let guess: u32 = "42".parse().expect("Not a number!"); // in this parsing example type has to be given, compile would not know what to infer
+
+    // Here types can be infered so there are set as default types for a number - int32 and string - ...?
+    let x = 5;
+
+    let x = "xd";
+
+    // SCALAR TYPES
+
+    /* 
+    There are four basic scalar types:
+    - integers
+    - floating point numbers
+    - Bool
+    - characters
+
     
+    */
 }
